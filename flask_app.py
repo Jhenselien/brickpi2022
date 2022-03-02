@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
+from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging # Import Flask
 from interfaces import databaseinterface, camerainterface, soundinterface
 import robot #robot is class that extends the brickpi class
 import global_vars as GLOBALS #load global variables
