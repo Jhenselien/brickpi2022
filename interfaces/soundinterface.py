@@ -1,6 +1,9 @@
 #you will need to install speake3
-import speake3
-import pygame
+try:
+    import speake3
+    import pygame
+except Exception as E:
+    print("oh nonononononono")
 
 class SoundInterface():
     

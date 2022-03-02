@@ -3,9 +3,12 @@
 import time
 import io
 import threading
-import picamera
-import picamera.array
-import cv2
+try:
+    import picamera
+    import picamera.array
+    import cv2
+except Exception as E:
+    print("no no no no")
 import numpy
 import logging
 
