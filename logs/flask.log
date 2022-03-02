@@ -32,3 +32,33 @@ INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:28:54] "[36mGET /static/js/custom.j
 INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:28:54] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
 INFO:werkzeug: * Detected change in 'c:\\Users\\JamesHenselien\\Documents\\GitHub\\brickpi2022\\flask_app.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 954-577-504
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.10.72.250:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:38:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:23] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:28] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2022 09:41:31] "[33mGET /mission HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\JamesHenselien\\Documents\\GitHub\\brickpi2022\\interfaces\\soundinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
