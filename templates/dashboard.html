@@ -15,6 +15,13 @@
             <button id="compass" type="button" class="btn btn-secondary" onclick="new_ajax_helper('/compass');">Set Compass</button>
             <button id="sensors" type="button" class="btn btn-info" onclick="new_ajax_helper('/sensors');">Sensors</button>
         </div>
+        <br>
+        <div class="row">
+            <button id="shutdown" type="button" class="btn bs-red" onclick="shutdown_robot();">Turn Left</button>
+            <button id="reconfig" type="button" class="btn bs-red" onclick="new_ajax_helper('/reconfig_IMU');">Move Forward</button>
+            <button id="compass" type="button" class="btn bs-red" onclick="new_ajax_helper('/compass');">Turn Right</button>
+            <button id="sensors" type="button" class="btn btn-info" onclick="new_ajax_helper('/sensors');">Sensors</button>
+        </div>
         <div class="row">
             <div id="videobox" class="col">
                 <div id="videofeed"></div>

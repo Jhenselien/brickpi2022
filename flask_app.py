@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging # Import Flask
 from interfaces import databaseinterface, camerainterface, soundinterface
 import robot #robot is class that extends the brickpi class
@@ -100,19 +99,25 @@ def sensors():
 
 # YOUR FLASK CODE------------------------------------------------------------------------
 
+#action list. shows previous actions for the current mission, and option for differant one with all actions
 @app.route('/actionlist', methods=['GET','POST'])
 def actionlist():
     return render_template('actionlist.html')
 
+
+# mission page. Shows current mission information, driver, robot and other
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     return render_template('mission.html')
 
-@app.route('medicalnotes', methods=['GET','POST'])
+# medical notes page. shows recorded medical notes, including the patients status and extra info.
+@app.route('/medicalnotes', methods=['GET','POST'])
 def medicalnotes():
     return render_template('medicalnotes.html')
 
-
+@app.route('/dashboard2', methods=['GET','POST'])
+def dashboard2():
+    return render_template('dashboard.html')
 
 
 
