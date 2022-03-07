@@ -1,3 +1,4 @@
+from pickle import GLOBAL
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging # Import Flask
 from interfaces import databaseinterface, camerainterface, soundinterface
 import robot #robot is class that extends the brickpi class
@@ -97,7 +98,43 @@ def sensors():
         data = GLOBALS.ROBOT.get_all_sensors()
     return jsonify(data)
 
+
 # YOUR FLASK CODE------------------------------------------------------------------------
+
+@app.route('/shoot', methods=['GET','POST']
+def shoot():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.spin_medium_motor(360)
+    return jsonify(data)
+
+@app.route('/moveforward', methods=['GET','POST']
+def moveforward():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.move_power_time(35,1)
+    return jsonify(data)
+
+@app.route('/turnleft', methods=['GET','POST']
+def turnleft():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(15,90,2)
+    return jsonify(data)
+
+@app.route('/turnright', methods=['GET','POST']
+def turnright():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(15,-90,2)
+    return jsonify(data)
+
+@app.route('/Stopall', methods=['GET','POST']
+def stopall():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.stop_all()
+    return jsonify(data)
 
 #action list. shows previous actions for the current mission, and option for differant one with all actions
 @app.route('/actionlist', methods=['GET','POST'])
@@ -118,13 +155,6 @@ def medicalnotes():
 @app.route('/dashboard2', methods=['GET','POST'])
 def dashboard2():
     return render_template('dashboard.html')
-
-
-
-
-
-
-
 
 
 

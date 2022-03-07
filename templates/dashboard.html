@@ -14,13 +14,15 @@
             <button id="reconfig" type="button" class="btn btn-warning" onclick="new_ajax_helper('/reconfig_IMU');">Reconfigure IMU</button>
             <button id="compass" type="button" class="btn btn-secondary" onclick="new_ajax_helper('/compass');">Set Compass</button>
             <button id="sensors" type="button" class="btn btn-info" onclick="new_ajax_helper('/sensors');">Sensors</button>
+            <button id="STOP ALL" type="button" class="btn btn-info" onclick="new_ajax_helper('/stopall');">STOP ALL</button>
         </div>
         <br>
         <div class="row">
-            <button id="shutdown" type="button" class="btn bs-red" onclick="shutdown_robot();">Turn Left</button>
-            <button id="reconfig" type="button" class="btn bs-red" onclick="new_ajax_helper('/reconfig_IMU');">Move Forward</button>
-            <button id="compass" type="button" class="btn bs-red" onclick="new_ajax_helper('/compass');">Turn Right</button>
-            <button id="sensors" type="button" class="btn btn-info" onclick="new_ajax_helper('/sensors');">Sensors</button>
+            <button id="turnleft" type="button" class="btn bs-red" onclick="shutdown_robot('/turnleft');">Turn Left</button>
+            <button id="moveforward" type="button" class="btn bs-red" onclick="new_ajax_helper('/moveforward');">Move Forward</button>
+            <button id="turnright" type="button" class="btn bs-red" onclick="new_ajax_helper('/turnright');">Turn Right</button>
+            <button id="movebackwards" type="button" class="btn btn-info" onclick="new_ajax_helper('/movebackwards');">Move Backwards</button>
+
         </div>
         <div class="row">
             <div id="videobox" class="col">

@@ -605,7 +605,8 @@ if __name__ == '__main__':
     bp = ROBOT.BP; bp.reset_all(); time.sleep(2) #this will halt previou program is still running
     ROBOT.configure_sensors() #This takes 4 seconds
     input("Press enter to start: ")
-    ROBOT.spin_medium_motor(300)
-    ROBOT.rotate_power_degrees_IMU(17,90)
+    ROBOT.spin_medium_motor(360)
+    ROBOT.move_power_time(35,5,0)
+    ROBOT.rotate_power_degrees_IMU(15,90,2)
     print(ROBOT.get_all_sensors())
     ROBOT.safe_exit()
