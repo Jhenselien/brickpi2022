@@ -237,6 +237,7 @@ def shutdown():
 def logout():
     shutdowneverything()
     session.clear()
+    print("COCK")
     return redirect('/')
 
 #---------------------------------------------------------------------------
